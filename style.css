@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px limegreen;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-box {
+  display: flex;
+  justify-content: space-between;
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.password-box input {
+  border: none;
+  background: transparent;
+  color: limegreen;
+  font-size: 18px;
+  width: 100%;
+}
+
+.password-box button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.options label {
+  display: block;
+  margin: 5px 0;
+}
+
+.length label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+#generateBtn {
+  background: limegreen;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#generateBtn:hover {
+  background: #00ff00;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Theme toggle icon */
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: limegreen;
+  cursor: pointer;
+}
+
+/* LIGHT THEME OVERRIDES */
+.light-theme {
+  background: #f0f0f0;
+  color: #111;
+}
+
+.light-theme .container {
+  background: #ffffff;
+  color: #111;
+  box-shadow: 0 0 20px #ccc;
+}
+
+.light-theme .password-box {
+  background: #eee;
+}
+
+.light-theme input[type="text"] {
+  color: #222;
+}
+
+.light-theme #generateBtn {
+  background: #4CAF50;
+  color: white;
+}
+
+.light-theme #copyBtn {
+  color: #111;
+}
+
+.light-theme #themeToggle {
+  color: #4CAF50;
+}
+
+.light-theme footer {
+  color: #333;
+}
+
+.light-theme a {
+  color: #4CAF50;
+}
